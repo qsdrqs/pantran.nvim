@@ -152,8 +152,8 @@ function window:set_title(title)
   local title_conf = {
     border = "none",
     zindex =  conf.zindex + 1,
-    row    = conf.row[false], -- FIXME: find out why this is a table
-    col    = conf.col[false] + math.ceil((conf.width - title_len) / 2) + 1,
+    row    = conf.row,
+    col    = conf.col + math.ceil((conf.width - title_len) / 2) + 1,
     width  = title_len,
     height = 1,
   }
